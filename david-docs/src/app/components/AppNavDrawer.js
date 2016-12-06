@@ -422,6 +422,24 @@ class AppNavDrawer extends Component {
             value="https://www.google.com/design/spec/material-design/introduction.html"
           />
         </SelectableList>
+        <Divider />
+        <SelectableList
+          value={location.pathname}
+          onChange={onChangeList}
+        >
+          <Subheader>Store Management System</Subheader>
+          <ListItem
+            primaryText="Settings"
+            primaryTogglesNestedList={true}
+            nestedItems={[
+              <ListItem
+                primaryText="Users"
+                value="/settings/user"
+                href="#/settings/user"
+              />,
+            ]}
+          />
+        </SelectableList>
       </Drawer>
     );
   }

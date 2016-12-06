@@ -66,6 +66,9 @@ import RelatedProjects from './components/pages/discover-more/RelatedProjects';
 
 import StepperPage from './components/pages/components/Stepper/Page';
 
+
+import UserPage from './components/pages/users/Page'
+
 /**
  * Routes: https://github.com/reactjs/react-router/blob/master/docs/API.md#route
  *
@@ -142,6 +145,9 @@ const AppRoutes = (
       <Route path="contributing" component={Contributing} />
       <Route path="showcase" component={Showcase} />
       <Route path="related-projects" component={RelatedProjects} />
+    </Route>
+    <Route path="settings">
+      <Route path="user" component={UserPage} />
     </Route>
   </Route>
 );
