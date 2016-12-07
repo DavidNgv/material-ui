@@ -26,8 +26,10 @@ const descriptions = {
 
 const UserPage = () => (
   <div>
-    <Title render={(previousTitle) => `Table - ${previousTitle}`} />
-    <MarkdownElement text={tableReadmeText} />
+    <Title render={(previousTitle) => `User Setting - ${previousTitle}`} />
+    {/*<MarkdownElement text={tableReadmeText} />*/}
+
+{/*
     <CodeExample
       title="Simple example"
       description={descriptions.simple}
@@ -35,6 +37,8 @@ const UserPage = () => (
     >
       <TableExampleSimple />
     </CodeExample>
+*/}
+
     <CodeExample
       title="Complex example"
       description={descriptions.complex}
@@ -42,6 +46,7 @@ const UserPage = () => (
     >
       <TableExampleComplex />
     </CodeExample>
+{/*
     <PropTypeDescription code={tableCode} header="### Table Properties" />
     <PropTypeDescription code={tableRowCode} header="### TableRow Properties" />
     <PropTypeDescription code={tableRowColumnCode} header="### TableRowColumn Properties" />
@@ -49,6 +54,7 @@ const UserPage = () => (
     <PropTypeDescription code={tableHeaderColumnCode} header="### TableHeaderColumn Properties" />
     <PropTypeDescription code={tableBodyCode} header="### TableBody Properties" />
     <PropTypeDescription code={tableFooterCode} header="### TableFooter Properties" />
+*/}
   </div>
 );
 

@@ -26,8 +26,8 @@ class HomePage extends Component {
       },
       svgLogo: {
         marginLeft: window.innerWidth * 0.5 - 130,
-        width: 420,
-        height: 157,
+        width: 330,
+        height: 112,
       },
       tagline: {
         margin: '16px auto 0 auto',
@@ -83,15 +83,15 @@ class HomePage extends Component {
       <FullWidthSection style={styles.root}>
         <img style={styles.svgLogo} src="images/material-ui-logo.svg" />
         <div style={styles.tagline}>
-          <h1 style={styles.h1}>Material-UI</h1>
+          <h1 style={styles.h1}>EzyStoreMan</h1>
           <h2 style={styles.h2}>
-            A Set of React Components <span style={styles.nowrap}>
-            that Implement</span> <span style={styles.nowrap}>
-            Google&apos;s Material Design</span>
+            Store Management <span style={styles.nowrap}>
+            simplify all tasks </span> <span style={styles.nowrap}>
+            In-Out-Stock-Multiple-Items-Payment</span>
           </h2>
           <RaisedButton
             className="demo-button"
-            label="Demo"
+            label="Login"
             onTouchTap={this.handleTouchTapDemo}
             style={styles.demoStyle}
             labelStyle={styles.label}
@@ -145,19 +145,19 @@ class HomePage extends Component {
     return (
       <FullWidthSection useContent={true} contentStyle={styles}>
         <HomeFeature
-          heading="Get Started"
-          route="/get-started"
+          heading="Stock In"
+          route="/"
           img="images/get-started.svg"
           firstChild={true}
         />
         <HomeFeature
-          heading="Customization"
-          route="/customization"
+          heading="Sales"
+          route="/"
           img="images/css-framework.svg"
         />
         <HomeFeature
-          heading="Components"
-          route="/components"
+          heading="Payments"
+          route="/"
           img="images/components.svg"
           lastChild={true}
         />
@@ -210,9 +210,9 @@ class HomePage extends Component {
     return (
       <div style={style}>
         {this.homePageHero()}
-        {this.homePurpose()}
+        {/*{this.homePurpose()}*/}
         {this.homeFeatures()}
-        {this.homeContribute()}
+        {/*{this.homeContribute()}*/}
       </div>
     );
   }

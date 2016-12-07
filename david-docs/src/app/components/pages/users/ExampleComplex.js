@@ -133,6 +133,7 @@ export default class TableExampleComplex extends React.Component {
           </TableFooter>
         </Table>
 
+{/*
         <div style={styles.propContainer}>
           <h3>Table Properties</h3>
           <TextField
@@ -197,6 +198,7 @@ export default class TableExampleComplex extends React.Component {
             defaultToggled={this.state.showCheckboxes}
           />
         </div>
+*/}
       </div>
     );
   }

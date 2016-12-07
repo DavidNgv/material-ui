@@ -148,6 +148,7 @@ class Master extends Component {
       router.isActive('/get-started') ? 'Get Started' :
       router.isActive('/customization') ? 'Customization' :
       router.isActive('/components') ? 'Components' :
+      router.isActive('/settings') ? 'Settings' :
       router.isActive('/discover-more') ? 'Discover More' : '';
 
     let docked = false;
@@ -167,7 +168,7 @@ class Master extends Component {
 
     return (
       <div>
-        <Title render="Material-UI" />
+        <Title render="EzyStoreMan" />
         <AppBar
           onLeftIconButtonTouchTap={this.handleTouchTapLeftIconButton}
           title={title}
@@ -175,7 +176,7 @@ class Master extends Component {
           iconElementRight={
             <IconButton
               iconClassName="muidocs-icon-custom-github"
-              href="https://github.com/callemall/material-ui"
+              href="https://github.com/davidngv/material-ui"
             />
           }
           style={styles.appBar}
@@ -201,14 +202,9 @@ class Master extends Component {
         />
         <FullWidthSection style={styles.footer}>
           <p style={prepareStyles(styles.p)}>
-            {'Hand crafted with love by the engineers at '}
-            <a style={styles.a} href="http://www.call-em-all.com/Careers">
-              Call-Em-All
-            </a>
-            {' and our awesome '}
             <a
               style={prepareStyles(styles.a)}
-              href="https://github.com/callemall/material-ui/graphs/contributors"
+              href="https://github.com/davidngv/material-ui/graphs/contributors"
             >
               contributors
             </a>.
@@ -216,15 +212,8 @@ class Master extends Component {
           <IconButton
             iconStyle={styles.iconButton}
             iconClassName="muidocs-icon-custom-github"
-            href="https://github.com/callemall/material-ui"
+            href="https://github.com/davidngv/material-ui"
           />
-          <p style={prepareStyles(styles.browserstack)}>
-            {'Thank you to '}
-            <a href="https://www.browserstack.com" style={prepareStyles(styles.browserstackLogo)} target="_blank">
-              <img src="http://www.browserstack.com/images/layout/logo.png" height="25" width="auto" />
-            </a>
-            {' for providing real browser testing infrastructure.'}
-          </p>
         </FullWidthSection>
       </div>
     );
