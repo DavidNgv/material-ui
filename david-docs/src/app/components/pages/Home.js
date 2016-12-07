@@ -25,9 +25,10 @@ class HomePage extends Component {
         overflow: 'hidden',
       },
       svgLogo: {
-        marginLeft: window.innerWidth * 0.5 - 130,
-        width: 330,
-        height: 112,
+        // marginLeft: window.innerWidth * 0.5 - 130,
+        marginLeft: (window.innerWidth - 540 * 0.7) / 2,
+        width: 540 * 0.7,
+        height: 460 * 0.7,
       },
       tagline: {
         margin: '16px auto 0 auto',
@@ -81,7 +82,8 @@ class HomePage extends Component {
 
     return (
       <FullWidthSection style={styles.root}>
-        <img style={styles.svgLogo} src="images/material-ui-logo.svg" />
+        {/*<img style={styles.svgLogo} src="images/material-ui-logo.svg" />*/}
+        <img style={styles.svgLogo} src="images/store-man-logo-2.png" />
         <div style={styles.tagline}>
           <h1 style={styles.h1}>EzyStoreMan</h1>
           <h2 style={styles.h2}>
@@ -145,18 +147,18 @@ class HomePage extends Component {
     return (
       <FullWidthSection useContent={true} contentStyle={styles}>
         <HomeFeature
-          heading="Stock In"
+          heading="Stock-In-Out"
           route="/"
           img="images/get-started.svg"
           firstChild={true}
         />
         <HomeFeature
-          heading="Sales"
+          heading="POS-Sales"
           route="/"
           img="images/css-framework.svg"
         />
         <HomeFeature
-          heading="Payments"
+          heading="Payment-Cash-Owned"
           route="/"
           img="images/components.svg"
           lastChild={true}
