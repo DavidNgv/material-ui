@@ -8,6 +8,8 @@ import typography from 'material-ui/styles/typography';
 import lightBaseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
 import {cyan500, grey200, darkWhite} from 'material-ui/styles/colors';
 
+require('./home.css');
+
 class HomePage extends Component {
 
   static propTypes = {
@@ -83,6 +85,44 @@ class HomePage extends Component {
     return (
       <FullWidthSection style={styles.root}>
         {/*<img style={styles.svgLogo} src="images/material-ui-logo.svg" />*/}
+        <ul id="wire">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
         <img style={styles.svgLogo} src="images/store-man-logo-2.png" />
         <div style={styles.tagline}>
           <h1 style={styles.h1}>EzyStoreMan</h1>
