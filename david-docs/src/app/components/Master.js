@@ -148,8 +148,11 @@ class Master extends Component {
       router.isActive('/get-started') ? 'Get Started' :
       router.isActive('/customization') ? 'Customization' :
       router.isActive('/components') ? 'Components' :
-      router.isActive('/settings') ? 'Settings' :
+      router.isActive('/settings') ? router.isActive('/settings/user') ? 'User Settings' : 'Settings' :
+      router.isActive('/stock-in') ? router.isActive('/stock-in/list') ? 'Stock In List' : 'Stock In' :
       router.isActive('/discover-more') ? 'Discover More' : '';
+
+    // console.log(router.isActive('/settings/user'));
 
     let docked = false;
     let showMenuIconButton = true;

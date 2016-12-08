@@ -121,8 +121,9 @@ class AppNavDrawer extends Component {
         containerStyle={{zIndex: zIndex.drawer - 100}}
       >
         <div style={styles.logo} onTouchTap={this.handleTouchTapHeader}>
-          Store Man
+          EzyStoreMan
         </div>
+
 {/*
         <span style={styles.version}>Version:</span>
         <DropDownMenu
@@ -139,12 +140,10 @@ class AppNavDrawer extends Component {
             />
           ))}
         </DropDownMenu>
-*/}
         <SelectableList
           value={location.pathname}
           onChange={onChangeList}
         >
-{/*
           <ListItem
             primaryText="Get Started"
             primaryTogglesNestedList={true}
@@ -156,8 +155,6 @@ class AppNavDrawer extends Component {
               <ListItem primaryText="Examples" value="/get-started/examples" />,
             ]}
           />
-*/}
-{/*
           <ListItem
             primaryText="Customization"
             primaryTogglesNestedList={true}
@@ -167,7 +164,6 @@ class AppNavDrawer extends Component {
               <ListItem primaryText="Colors" value="/customization/colors" />,
             ]}
           />
-*/}
           <ListItem
             primaryText="Components"
             primaryTogglesNestedList={true}
@@ -404,7 +400,6 @@ class AppNavDrawer extends Component {
               />,
             ]}
           />
-{/*
           <ListItem
             primaryText="Discover More"
             primaryTogglesNestedList={true}
@@ -415,9 +410,7 @@ class AppNavDrawer extends Component {
               <ListItem primaryText="Related projects" value="/discover-more/related-projects" />,
             ]}
           />
-*/}
         </SelectableList>
-{/*
         <Divider />
         <SelectableList
           value=""
@@ -431,13 +424,13 @@ class AppNavDrawer extends Component {
             value="https://www.google.com/design/spec/material-design/introduction.html"
           />
         </SelectableList>
-*/}
         <Divider />
+*/}
+
         <SelectableList
           value={location.pathname}
           onChange={onChangeList}
         >
-          <Subheader>Store Management System</Subheader>
           <ListItem
             primaryText="Settings"
             primaryTogglesNestedList={true}
@@ -446,6 +439,23 @@ class AppNavDrawer extends Component {
                 primaryText="Users"
                 value="/settings/user"
                 href="#/settings/user"
+              />,
+            ]}
+          />
+        </SelectableList>
+        <Divider />
+        <SelectableList
+          value={location.pathname}
+          onChange={onChangeList}
+        >
+          <ListItem
+            primaryText="Stock In"
+            primaryTogglesNestedList={true}
+            nestedItems={[
+              <ListItem
+                primaryText="List"
+                value="/stock-in/list"
+                href="#/stock-in/list"
               />,
             ]}
           />

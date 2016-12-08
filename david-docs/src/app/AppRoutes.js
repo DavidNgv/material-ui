@@ -68,6 +68,7 @@ import StepperPage from './components/pages/components/Stepper/Page';
 
 
 import UserPage from './components/pages/users/Page'
+import ListStockIn from './components/pages/stock-in/List'
 
 /**
  * Routes: https://github.com/reactjs/react-router/blob/master/docs/API.md#route
@@ -148,6 +149,9 @@ const AppRoutes = (
     </Route>
     <Route path="settings">
       <Route path="user" component={UserPage} />
+    </Route>
+    <Route path="stock-in">
+      <Route path="list" component={ListStockIn} />
     </Route>
   </Route>
 );

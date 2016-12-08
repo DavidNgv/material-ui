@@ -1,3 +1,7 @@
+/**
+ * Created by davidngv on 12/8/16.
+ */
+
 import React from 'react';
 import Title from 'react-title-component';
 
@@ -19,36 +23,50 @@ const tableData = [
   {
     name: 'John Smith',
     status: 'Employed',
+    date: '20-11-2015',
     selected: true,
+    comment: '',
   },
   {
     name: 'Randal White',
     status: 'Unemployed',
+    date: '20-11-2015',
+    comment: '',
   },
   {
     name: 'Stephanie Sanders',
     status: 'Employed',
     selected: true,
+    date: '20-11-2015',
+    comment: '',
   },
   {
     name: 'Steve Brown',
     status: 'Employed',
+    date: '20-11-2015',
+    comment: '',
   },
   {
     name: 'Joyce Whitten',
     status: 'Employed',
+    date: '20-11-2015',
+    comment: '',
   },
   {
     name: 'Samuel Roberts',
     status: 'Employed',
+    date: '20-11-2015',
+    comment: '',
   },
   {
     name: 'Adam Moore',
     status: 'Employed',
+    date: '20-11-2015',
+    comment: '',
   },
 ];
 
-class UserPage extends React.Component {
+class ListStockIn extends React.Component {
   constructor(props) {
     super(props);
 
@@ -79,7 +97,7 @@ class UserPage extends React.Component {
   render() {
     return (
       <div>
-        <Title render={(previousTitle) => `User Setting - ${previousTitle}`} />
+        <Title render={(previousTitle) => `Stock In List - ${previousTitle}`} />
 
         <Table
           height={this.state.height}
@@ -93,17 +111,17 @@ class UserPage extends React.Component {
             adjustForCheckbox={this.state.showCheckboxes}
             enableSelectAll={this.state.enableSelectAll}
           >
-{/*
-            <TableRow>
-              <TableHeaderColumn colSpan="3" tooltip="Super Header" style={{textAlign: 'center'}}>
-                Super Header
-              </TableHeaderColumn>
-            </TableRow>
-*/}
+            {/*
+             <TableRow>
+             <TableHeaderColumn colSpan="3" tooltip="Super Header" style={{textAlign: 'center'}}>
+             Super Header
+             </TableHeaderColumn>
+             </TableRow>
+             */}
             <TableRow>
               {/*<TableHeaderColumn tooltip="The ID">ID</TableHeaderColumn>*/}
-              <TableHeaderColumn tooltip="The Name">Name</TableHeaderColumn>
-              <TableHeaderColumn tooltip="The Status">Status</TableHeaderColumn>
+              <TableHeaderColumn tooltip="The Name">Date</TableHeaderColumn>
+              <TableHeaderColumn tooltip="The Status">Comment</TableHeaderColumn>
             </TableRow>
           </TableHeader>
           <TableBody
@@ -115,27 +133,27 @@ class UserPage extends React.Component {
             {tableData.map( (row, index) => (
               <TableRow key={index} selected={row.selected}>
                 {/*<TableRowColumn>{index}</TableRowColumn>*/}
-                <TableRowColumn>{row.name}</TableRowColumn>
-                <TableRowColumn>{row.status}</TableRowColumn>
+                <TableRowColumn>{row.date}</TableRowColumn>
+                <TableRowColumn>{row.comment}</TableRowColumn>
               </TableRow>
             ))}
           </TableBody>
-{/*
-          <TableFooter
-            adjustForCheckbox={this.state.showCheckboxes}
-          >
-            <TableRow>
-              <TableRowColumn>ID</TableRowColumn>
-              <TableRowColumn>Name</TableRowColumn>
-              <TableRowColumn>Status</TableRowColumn>
-            </TableRow>
-            <TableRow>
-              <TableRowColumn colSpan="3" style={{textAlign: 'center'}}>
-                Super Footer
-              </TableRowColumn>
-            </TableRow>
-          </TableFooter>
-*/}
+          {/*
+           <TableFooter
+           adjustForCheckbox={this.state.showCheckboxes}
+           >
+           <TableRow>
+           <TableRowColumn>ID</TableRowColumn>
+           <TableRowColumn>Name</TableRowColumn>
+           <TableRowColumn>Status</TableRowColumn>
+           </TableRow>
+           <TableRow>
+           <TableRowColumn colSpan="3" style={{textAlign: 'center'}}>
+           Super Footer
+           </TableRowColumn>
+           </TableRow>
+           </TableFooter>
+           */}
         </Table>
 
       </div>
@@ -143,4 +161,4 @@ class UserPage extends React.Component {
   }
 }
 
-export default UserPage;
+export default ListStockIn;
